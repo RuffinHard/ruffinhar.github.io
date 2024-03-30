@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Virtual</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* gradiente cobre a toda a tela */
+            position: relative; /* Necessário para posicionamento absoluto de elementos */
+            background-color: #f0f0f0; 
+        }
+        body, html{
+            height: 100%;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        p{
+            color: white;
+            text-align: center;
+        }  
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('desenvolvimentoFundo.png'); 
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px); /* Adiciona efeito de borrão */
+            z-index: -1;
+        }
+        .container {
+
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0, 0.8); /* preto com opacidade 80% */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 3px solid #CEE3FE;
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+        .menu{
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;/*centraliza menu*/
+            gap: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        li {
+            display: inline-block;
+            margin-bottom: 10px;
+            color: white;
+        }
+        a, a:link {
+            text-decoration: none;
+            color: white;
+            padding: 8px 16px;
+            transition: color 0.3s;
+        }
+        a:hover {
+            background-color: #CEE3FE;
+            border-radius: 3px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="container menu">
+    <ul>
+        <li><a href="index.html">Pagina Principal</a></li>
+        <li>|</li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li>|</li>
+        <li><a href="portifolio.html">Portifólio</a></li>
+    </ul>
+    <h1>Sobre mim</h1>
+    <br><br>
+    <p>Meu nome é Guilherme Bazilio, sou natural de Curitiba - PR, e tenho 27 anos. Trabalho hoje como Analista de Telecomunicações na Telefonica Brasil. Este cargo me permitiu consolidar habilidades técnicas de análise e comunicações, além de me desafiar diariamente, me fazendo sempre buscar novos conhecimentos.</p>
+    <p>Estou sempre pronto para novos desafios, e minha alta capacidade de adaptação me torna altamente eficiente mesmo diante de cenários completamente novos.</p>
+    <p>Se chegou até aqui, espero que possamos trablhar juntos um dia, e que nossos projetos possam mudar o mundo para um lugar melhor</p>
+    <p>Att,<br>Guilherme Bazilio</p>
+    <br>
+</div>
+
+</body>
+</html>

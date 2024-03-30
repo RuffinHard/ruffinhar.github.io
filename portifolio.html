@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Virtual</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* gradiente cobre a toda a tela */
+            position: relative; /* Necessário para posicionamento absoluto de elementos */
+            background-color: #f0f0f0; 
+        }
+        body, html{
+            height: 100%;
+        }
+        p, h2{
+            color: white;
+            text-align: center;
+        }  
+        * {
+            box-sizing: border-box;
+        }
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+            display: flex;
+            justify-content: center;
+        } 
+        .card {
+            display: flex;
+            flex-flow: row wrap;
+
+        }
+        .img {
+            border: 1px solid #ccc;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('desenvolvimentoFundo.png'); 
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px); /* Adiciona efeito de borrão */
+            z-index: -1;
+        }
+        .container {
+
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0, 0.8); /* preto com opacidade 80% */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 3px solid #CEE3FE;
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+        .menu{
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;/*centraliza menu*/
+            gap: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        li {
+            display: inline-block;
+            margin-bottom: 10px;
+            color: white;
+        }
+        a, a:link {
+            text-decoration: none;
+            color: white;
+            padding: 8px 16px;
+            transition: color 0.3s;
+        }
+        a:hover {
+            background-color: #CEE3FE;
+            border-radius: 3px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="container menu">
+    <ul>
+        <li><a href="index.html">Pagina Principal</a></li>
+        <li>|</li>
+        <li><a href="sobre.html">Sobre mim</a></li>
+        <li>|</li>
+        <li><a href="formacao.html">Formação</a></li>
+    </ul>
+    <h1>Portifólio</h1>
+    <br><br>
+    <p>Abaixo alguns trabalhos que já realizei:</p>
+    <br>
+    <section class=" principal">
+        <div class="card"><a href="">
+            <div class="img">
+                <img src="senna.png">
+
+                <div class="">
+                    <h2>Ayrton Senna</h2>
+                    <p>Biografia</p>
+
+                </div>
+            </div>
+        </a>
+        </div>
+        <div class="card"><a href="">
+            <div class="img">
+                <img src="senna.png">
+
+                <div class="">
+                    <h2>Ayrton Senna</h2>
+                    <p>Biografia</p>
+
+                </div>
+            </div>
+        </a>
+        </div>
+        <div class="card"><a href="">
+            <div class="img">
+                <img src="senna.png">
+
+                <div class="">
+                    <h2>Ayrton Senna</h2>
+                    <p>Biografia</p>
+
+                </div>
+            </div>
+        </a>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
